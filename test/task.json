@@ -1,0 +1,49 @@
+{
+	"hosts": ["localhost", "10.21.5.15"],
+	"tasks": {
+		"stage1": {
+			"job1": [
+				"echo",
+				"stage1 job1"
+			],
+			"job2": [
+				"echo",
+				"stage1 job2"
+			]
+		},
+	  "stage2": {
+	 	"job1": [
+			"echo",
+			"stage 2 job1"
+		],
+		"job2": [
+			"echo",
+			"stage 2 job2"
+		]
+	},
+	  "stage3": {
+	 	"job1": [
+			"wrong_cmd",
+			"stage 3 job1"
+		],
+		"job2": [
+			"echo",
+			"stage 3 job2"
+		]
+	},
+	  "stage4": {
+	 	"job1": [
+			"echo",
+			"stage 4 job1"
+		],
+		"job2": [
+			"echo",
+			"stage 4 job2"
+		],
+		  "job3": [
+			"wrong wrong command",
+			"stage 4 job3"
+		]
+	}
+  }
+}
